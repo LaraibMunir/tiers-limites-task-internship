@@ -1,0 +1,229 @@
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #F5F5F5; /* Light background color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Align logo and search/links sections */
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex; /* Inherit flexbox for child elements */
+  }
+  
+  .header-logo {
+    flex: 0 0 auto; /* Prevent logo from shrinking */
+  }
+  
+  .header-search-and-links {
+    display: flex;
+    align-items: center; /* Vertically align search icon and links */
+  }
+  
+  .header-search-and-links i {
+    font-size: 20px; /* Adjust search icon size as needed */
+    margin-right: 10px; /* Add spacing between icon and links */
+    color: #333; /* Text color */
+  }
+  
+  .header-search-and-links nav {
+    display: none; /* Initially hide navigation links */
+  }
+  
+  .header-search-and-links nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header-search-and-links nav li {
+    display: inline-block; /* Display links inline */
+    margin-left: 10px; /* Add spacing between links */
+  }
+  
+  .header-search-and-links nav a {
+    text-decoration: none;
+    color: #333; /* Text color */
+  }
+  
+  /* Media query for responsive behavior (optional) */
+  @media (max-width: 768px) {
+    .header-search-and-links nav {
+      display: flex; /* Show navigation links on smaller screens */
+      flex-direction: column; /* Stack links vertically */
+    }
+    .header-search-and-links nav li {
+      margin-left: 0; /* Remove margin between links on small screens */
+      margin-bottom: 5px; /* Add spacing between links vertically */
+    }
+  }
+  
+  /* Include Font Awesome CSS (if not already included) */
+  /* You can download Font Awesome from https://fontawesome.com/ */
+  /* Paste the link to the Font Awesome CSS file here */
+  
+  /* Resizing the logo */
+  .header-logo img {
+    max-width: 150px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  
+  
+  /* Main Content Styling */
+  main {
+    padding: 40px 0;
+  }
+  
+  .banner {
+    text-align: center;
+  }
+  
+  .banner h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .banner button {
+    background-color: #003366;
+    color: #fff; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .product-container {
+    margin: 0;
+    background-color: #F5F5F5;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* This is the key property */
+  }
+  
+  
+  .product-item {
+    width: 25%; /* Adjust width as needed for your layout */
+    margin: 0; /* Remove any margin from product items */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center; /* Center product content */
+  }
+  
+  /* Other styling rules... */
+  
+  .product-card {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
+  .product-card h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  .product-card p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-card button {
+    background-color: #003366;
+    color: #fff; /* Button text color */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #F5F5F5; /* Light background color */
+    padding: 20px 0;
+    display: flex; /* Use flexbox for simple 3-column layout */
+    justify-content: space-between; /* Distribute columns evenly */
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex; /* Inherit flexbox for child elements */
+    flex-wrap: nowrap; /* Prevent columns from wrapping on smaller screens */
+  }
+  
+  .footer-column {
+    width: 33.33%; /* Equal width for all columns */
+    padding: 10px;
+  }
+  
+  .footer-column img {
+    width: 120px; /* Adjust logo size as needed */
+    margin-bottom: 10px;
+  }
+  
+  /* Left-aligned content in first column */
+  .footer-column:first-child {
+    text-align: left;
+  }
+  
+  /* Center-aligned content in second column */
+  .footer-column:nth-child(2) {
+    text-align: center;
+  }
+  
+  /* Right-aligned content in third column */
+  .footer-column:nth-child(3) {
+    text-align: right;
+  }
+  
+  .footer-column p {
+    margin-bottom: 5px;
+  }
+  
+  .footer-column a {
+    text-decoration: none;
+    color: #333; /* Text color */
+  }
+  
+  .footer-column h3 {
+    margin-top: 0; /* Remove top margin for first column's heading */
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 5px;
+  }
+  
+  /* Optional: Style social media links (if needed) */
+  
+
